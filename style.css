@@ -1,0 +1,377 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    background:url("images/Students.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+}
+
+.header .navbar-brand img{
+    height: 55px;
+    width: 160px;
+}
+.header ul li{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 10px;
+}
+.header ul li a{
+    color: rgb(238,118,88);
+    transition: all ease-out 0.8s;
+}
+
+
+.header ul li a:hover{
+    transform: translateY(-10%);
+}
+.header ul li a.active{
+    transform: translateY(0);
+}
+.content{
+    color:rgb(77, 30, 163);
+    font-weight: bolder;
+    margin:75px;
+}
+.content h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+}
+.content h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    
+}
+.content.button{
+    background: linear-gradient(to right, rgb(216, 115, 241), rgb(240, 118, 209));
+    padding: 8px;
+    color: saddlebrown;
+    font-size: medium;
+    font-weight: 700;
+    font-family: cursive;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.content.button:active{
+    box-shadow: 3px 3px 0 black;
+    transform: translateY(3px);
+}
+.container .heading h1,.mentor-form .heading h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+}
+.container.row{
+    margin-top: 50px;
+}
+
+.container.card{
+    border:none;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    margin:10px;
+}
+.container.card img{
+    width: 55px;
+    height: 60px;
+    border-radius: 20px;
+    margin: auto;
+   
+}
+.container.card:hover{
+    transform: translateY(-15px);
+    transition: transform 0.3s;
+}
+.container.card .info h3{
+    margin-top: 4px;
+    font-family: 'Caveat', cursive;
+}
+.container.card.info p{
+    font-style: italic;
+}
+.container.card .apply-button{
+    margin-bottom: -8px;
+    margin-left: -2%;
+    width: 104%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card1 .apply-button{
+    background: black;
+
+}
+.card2 .apply-button{
+    background: black;
+    color:black;
+    
+}
+.card3 .apply-button{
+    background:rgb(226, 91, 24);
+}
+.card4 .apply-button{
+    background:rgb(63, 238, 86);
+}
+.apply-button-button{
+    outline: none !important;
+    border: none !important;
+}
+.mentor-form label, .mentor-form legend{
+    color: darkblue;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 16px;
+}
+.testimonials{
+    margin-top: 40px;
+}
+.testimonials .card{
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px rgb(100, 108, 170);
+    transition: 0.8s;
+}
+.testimonials .card-header{
+    border-radius: 20px;
+}
+.testimonials .card-header .outside{
+    position: inherit;
+    top: -50%;
+    width: 110px;
+    height: 110px;
+}
+.testimonials .card-header img{
+    border: 5px solid #fff;
+}
+.testimonials .card-header .name{
+    margin-top: -50px !important;
+    color: #b1b4db;
+}
+.testimonials .card-header .profile-img{
+    margin-bottom: -5px;
+}
+.testimonials .card-header small{
+    letter-spacing: 0.5px;
+}
+.testimonials .card-header .name p{
+    margin-bottom: 2px;
+}
+.testimonials .card-header .card-body p::before{
+    content: open-quote;
+    font-size: 6rem;
+    position: absolute;
+    left: -1rem;
+    top: -3.1rem;
+    color: #b1b4db;
+}
+.testimonials .card-header .card-body p::after{
+    content: close-quote;
+    font-size: 6rem;
+    position: absolute;
+    bottom: -4.5rem;
+    right: -1rem;
+    color: #b1b4db;
+}
+.testimonials .card-header .card-body p{
+    font-weight: 500;
+    color: #b1b4db;
+}
+.testimonials:hover .card:not(:hover){
+    transform: scale(0.9);
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #111;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background-color: #f00;
+}
+.sci li a .fa{
+    font-size: 20px;
+}
+footer .quick-links{
+    position: relative;
+    width: 25%;
+}
+footer .quick-links ul li a{
+    color: #999;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+footer .quick-links ul li a:hover{
+    color: #fff;
+}
+footer .contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span, .contact .info li a{
+    color: #999;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyright-text{
+    width: 100%;
+    background-color: #181818;
+    padding: 8px 100px;
+    color: #999;
+}
+
+
+
+
+@media screen and (max-width: 991.98px){
+    .menu-toggle{
+        position: relative;
+    }
+    .menu-toggle span{
+        width: 2rem;
+        height: 0.2rem;
+        display: block;
+        background: #fff;
+        border: 1px solid #000;
+        margin: 0.35rem;
+        transition: all 0.5s;
+    }
+    .menu-toggle.active span:nth-child(1){
+        transform: rotate(45deg);
+        position: relative;
+        top: 0.2rem;
+    }
+    .menu-toggle.active span:nth-child(2){
+        display: none;
+    }
+    .menu-toggle.active span:nth-child(3){
+        transform: rotate(-45deg);
+        position: relative;
+        top: -0.3rem;
+    }
+    .header ul li{
+        text-align: center;
+    }
+    .header .content h2{
+        font-size: 38px;
+        letter-spacing: -2px;
+    }
+    .header .content h4{
+        font-size: 26px;
+    }
+    .header .content .btn{
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+    .programs .card .apply-btn{
+        margin-left: -3%;
+        width: 106%;
+    }
+    .testimonials:hover .card:not(:hover){
+        transform: scale(0.9);
+    }
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus, footer .quick-links, footer .contact{
+        width: 100%;
+    }
+    .copyright-text{
+        padding: 8px 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .programs .card .apply-btn{
+        margin-left: -2%;
+        width: 104%;
+    }
+}
+@media screen and (max-width: 576px){
+    .navbar{
+        padding: 0 40px;
+    }
+    .header .content h2{
+        font-size: 30px;
+    }
+    .header .content h4{
+        font-size: 20px;
+    }
+    .card{
+        margin: 0 70px;
+    }
+    .card img {
+        width: 103%;
+        height: 250px;
+    }
+    .mentor-form .domains{
+        margin-left: 10px;
+    }
+}
+@media screen  and (max-width:408px){
+    .testimonials .card{
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+}
+@media screen and (max-width: 323px){
+    .header .navbar-brand img{
+        height: 50px;
+        width: 110px;
+    }
+}
