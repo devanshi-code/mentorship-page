@@ -186,7 +186,7 @@ footer{
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background-color: #111;
+    background-color:lightgray;
 }
 footer .container .sec{
     margin-right: 30px;
@@ -196,7 +196,7 @@ footer .container .sec.aboutus{
 }
 footer .container h2{
     position: relative;
-    color: #fff;
+    color:black;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -210,21 +210,20 @@ footer .container h2:before{
     background: #f00;
 }
 footer p{
-    color: #999;
+    color:red;
 }
 .sci{
     margin-top: 20px;
 }
 .sci li a{
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #222;
+    width: 1px;
+    height: 1px;
     margin-right: 10px;
     border-radius: 4px;
 }
 .sci li a:hover{
-    background-color: #f00;
+    background-color:black;
 }
 .sci li a .fa{
     font-size: 20px;
@@ -234,7 +233,7 @@ footer .quick-links{
     width: 25%;
 }
 footer .quick-links ul li a{
-    color: #999;
+    color:white;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -257,7 +256,7 @@ footer .contact{
     margin-right: 10px;
 }
 .contact .info li span, .contact .info li a{
-    color: #999;
+    color:white;
 }
 .contact .info li a:hover{
     color: #fff;
@@ -323,7 +322,7 @@ footer .contact{
         padding: 40px;
     }
     footer .container{
-        flex-direction: column;
+        flex-direction: row;
     }
     footer .container .sec{
         margin-right: 0;
