@@ -33,6 +33,7 @@ body{
 .header ul li a.active{
     transform: translateY(0);
 }
+
 .content{
     color:rgb(77, 30, 163);
     font-weight: bolder;
@@ -65,60 +66,7 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: brown;
 }
-.container.row{
-    margin-top: 50px;
-}
 
-.container.card{
-    border:none;
-    border-radius: 20px;
-    transition: transform 0.3s;
-    margin:10px;
-}
-.container.card img{
-    width: 55px;
-    height: 60px;
-    border-radius: 20px;
-    margin: auto;
-   
-}
-.container.card:hover{
-    transform: translateY(-15px);
-    transition: transform 0.3s;
-}
-.container.card .info h3{
-    margin-top: 4px;
-    font-family: 'Caveat', cursive;
-}
-.container.card.info p{
-    font-style: italic;
-}
-.container.card .apply-button{
-    margin-bottom: -8px;
-    margin-left: -2%;
-    width: 104%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.card1 .apply-button{
-    background: black;
-
-}
-.card2 .apply-button{
-    background: black;
-    color:black;
-    
-}
-.card3 .apply-button{
-    background:rgb(226, 91, 24);
-}
-.card4 .apply-button{
-    background:rgb(63, 238, 86);
-}
-.apply-button-button{
-    outline: none !important;
-    border: none !important;
-}
 .mentor-form label, .mentor-form legend{
     color: darkblue;
     font-family: cursive;
@@ -126,60 +74,84 @@ body{
     font-size: 16px;
 }
 .testimonials{
-    margin-top: 40px;
+    margin:50px auto;
 }
-.testimonials .card{
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px 0px rgb(100, 108, 170);
-    transition: 0.8s;
+.testimonials h1
+{
+    text-align:center ;
+    font-weight: bold;
+    color: #ff9800;
+    padding-bottom: 10px;
+    text-transform: uppercase;
 }
-.testimonials .card-header{
-    border-radius: 20px;
+.testimonials h1::after
+{
+    content:'';
+    background: #ff9800;
+    display: block;
+    height:3px;
+    width:170px;
+    margin:20px auto 5px;
 }
-.testimonials .card-header .outside{
-    position: inherit;
-    top: -50%;
-    width: 110px;
-    height: 110px;
+.testimonials .row
+{ 
+    margin-top: 30px;
+
 }
-.testimonials .card-header img{
-    border: 5px solid #fff;
+.col-md-4{
+    margin:40px auto;
 }
-.testimonials .card-header .name{
-    margin-top: -50px !important;
-    color: #b1b4db;
+.profile{
+    padding:70px 10px 10px;
+    background-color: #efefef;
 }
-.testimonials .card-header .profile-img{
-    margin-bottom: -5px;
-}
-.testimonials .card-header small{
-    letter-spacing: 0.5px;
-}
-.testimonials .card-header .name p{
-    margin-bottom: 2px;
-}
-.testimonials .card-header .card-body p::before{
-    content: open-quote;
-    font-size: 6rem;
+.profile img{
+    top:-60px;
     position: absolute;
-    left: -1rem;
-    top: -3.1rem;
-    color: #b1b4db;
+    left:calc(50% -100px);
+    border:10px solid white;
 }
-.testimonials .card-header .card-body p::after{
-    content: close-quote;
-    font-size: 6rem;
-    position: absolute;
-    bottom: -4.5rem;
-    right: -1rem;
-    color: #b1b4db;
+.user{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
 }
-.testimonials .card-header .card-body p{
-    font-weight: 500;
-    color: #b1b4db;
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #ff9800;
 }
-.testimonials:hover .card:not(:hover){
-    transform: scale(0.9);
+span{
+    font-size: 12px;
+    color: #333;
+
+}
+blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote::before{
+    content:close-quote;
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 20px;
+    bottom: -15px;
+    right:5px;
+}
+blockquote::before{
+    content:close-quote;
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 10px;
+    bottom: -15px;
+}
+.profile:hover
+{
+    box-shadow: 0 0 15px 15px rgba(0, 0,0,0.2);
+    cursor: pointer;
+    transition: 00.5s;
 }
 footer{
     position: relative;
@@ -214,13 +186,13 @@ footer p{
 }
 .sci{
     margin-top: 20px;
+    line-height:3em;
 }
 .sci li a{
-    display: inline-block;
-    width: 1px;
-    height: 1px;
+    display: inline-block; 
     margin-right: 10px;
     border-radius: 4px;
+    
 }
 .sci li a:hover{
     background-color:black;
@@ -233,12 +205,12 @@ footer .quick-links{
     width: 25%;
 }
 footer .quick-links ul li a{
-    color:white;
+    color:red;
     margin-bottom: 10px;
     display: inline-block;
 }
 footer .quick-links ul li a:hover{
-    color: #fff;
+    color:orange;
 }
 footer .contact{
     width: calc(35% - 60px);
@@ -251,12 +223,12 @@ footer .contact{
     margin-bottom: 16px;
 }
 .contact .info li span:nth-child(1){
-    color: #fff;
+    color:red;
     font-size: 20px;
     margin-right: 10px;
 }
 .contact .info li span, .contact .info li a{
-    color:white;
+    color:red;
 }
 .contact .info li a:hover{
     color: #fff;
