@@ -66,6 +66,57 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: brown;
 }
+.programs .row{
+    margin-top: 50px;
+}
+.programs .card{
+    border-radius: 20px; 
+    transition: transform 0.3s;
+    margin: 0 60px;
+}
+.programs .card img{
+    width: 103%;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: -7px;
+    margin-left: -3.5%;
+    margin-right: -3.5%;
+}
+.programs .card:hover{
+    transform: translateY(-15px);
+    transition: transform 0.3s;
+}
+.programs .card .info h3{
+    margin-top: 4px;
+    font-family: 'Caveat', cursive;
+}
+.programs .card .info p{
+    font-style: italic;
+}
+.programs .card .apply-btn{
+    margin-bottom: -8px;
+    margin-left: -2%;
+    width: 104%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card1 .apply-btn{
+    background: rgb(115, 70, 240);
+}
+.card2 .apply-btn{
+    background:rgb(36, 98, 230);
+    
+}
+.card3 .apply-btn{
+    background:rgb(226, 91, 24);
+}
+.card4 .apply-btn{
+    background:rgb(63, 238, 86);
+}
+.apply-btn .btn{
+    outline: none !important;
+    border: none !important;
+}
 
 .mentor-form label, .mentor-form legend{
     color: darkblue;
