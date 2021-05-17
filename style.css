@@ -317,6 +317,7 @@ footer .contact{
     footer{
         padding: 40px;
     }
+    
     footer .container{
         flex-direction: row;
     }
