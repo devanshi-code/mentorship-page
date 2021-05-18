@@ -136,7 +136,7 @@ body{
 {
     content:'';
     background: #ff9800;
-    display: block;
+    display:block;
     height:3px;
     width:170px;
     margin:20px auto 5px;
@@ -156,7 +156,7 @@ body{
     background-color: #efefef;
 }
 .profile img{
-    top:-60px;
+    top:-70px;
     position: absolute;
     left:calc(50% -100px);
     border:10px solid white;
@@ -363,8 +363,8 @@ footer .contact{
 }
 @media screen  and (max-width:408px){
     .testimonials .card{
-        margin-left: -1px;
-        margin-right: -1px;
+        margin-left: -2px;
+        margin-right: -2px;
     }
 }
 @media screen and (max-width: 323px){
