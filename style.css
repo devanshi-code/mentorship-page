@@ -360,6 +360,10 @@ footer .contact{
     .mentor-form .domains{
         margin-left: 10px;
     }
+    /* added the margin of the testimonals cards */
+    .col-md-4{
+        margin: 13% 0;
+    }
 }
 @media screen  and (max-width:408px){
     .testimonials .card{
