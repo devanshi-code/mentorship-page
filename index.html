@@ -8,6 +8,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Mentorship Page</title>
 </head>
 <body>
@@ -20,7 +24,9 @@
     <div class="content">
       <h2>Join Mentorship,Be the Expert</h2>
       <h3>From Zero To Hero</h3>
-      <button class="button">Join</button>
+      <button class="join_button">
+      <i class="fa fa-th-large" aria-hidden="true"></i>
+      Join</button>
     </div>
    </div>
    &nbsp;
@@ -49,7 +55,7 @@
              <img src="images/app-development.jpg" alt="">
             <div class="info" >
               <h3>App Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, provident.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="apply-btn p-3 text-center text-black mt-3 cursor">
               <span class="text-uppercase text-white">Apply now</span>
@@ -88,12 +94,15 @@
       </div>
      </div>
      <br>
-     <button onclick="window.location.href='form.html'">
+     <div>
+     <center>
+     <button class="join_mentor" onclick="window.location.href='form.html'">
      <div class="mentor-form">
       <div class="heading-text-centre">
               <h1>Join as a Mentor</h1>
           </div>
         </button> 
+        </center>
         </div>
        </div>
        <section class="testimonials">
@@ -134,7 +143,7 @@
               
                   <h2>About Us</h2>
                   <p>WE MENTOR STUDENTS AND MAKE THEM EXPERT</p>
-                  <ul class="sci d-flex list-unstyled">
+                <!--<ul class="sci d-flex list-unstyled">
                       <li>
                         <a href="https://wa.me/!!!yourNumberWithCountryCodeHere!!!?" style="text-decoration: none;" target="_blank">
                             <img src="images/whatsapp logo.png" width="30px;"><b>Whatsapp </b>
@@ -156,7 +165,8 @@
                             <img src="images/linkedin logo.png" width="30px;" ><b>Linkedin</b>
                         </a>
                       </li>
-                  </ul>
+                  </ul> -->
+          
               </div>
               <div class="sec quick-links">
                   <h2>Quick Links</h2>
@@ -181,7 +191,7 @@
                       </li>
                   </ul>
               </div>
-              <div class="sec contact">
+              <!-- <div class="sec contact">
                   <h2>Contact Info</h2>
                           <span><b>Nirmaan IITM, Chennai 600036</b></span>
                     </div>
@@ -194,8 +204,31 @@
                           <a class="text-decoration-none" href="tel:9940332489">9940332489</a>
                       </li>
                   </ul>
-              </div>
+              </div> -->
           </div>
+                  <ul class="social_link">
+                <li class="instagram" style="
+                    background: radial-gradient(
+                      circle at 30% 107%,
+                      #fdf497 0%,
+                      #fdf497 5%,
+                      #fd5949 45%,
+                      #d6249f 60%,
+                      #285aeb 90%
+                    );
+                  ">
+                  <a href="https://www.instagram.com/official_techtable/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li class="linkedin">
+                  <a href="https://www.linkedin.com/company/tech-table/?originalSubdomain=in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li class="youtube">
+                  <a href="https://www.youtube.com/channel/UCI8-jWJ40rvAcp4cGsFa3Ag"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </li>
+                <li class="whatsapp">
+                  <a href="https://wa.me/!!!yourNumberWithCountryCodeHere!!!?"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                </li>
+              </ul>
       </footer>
       <div class="copyright-text text-center">
           <p>Copyright <i class="fas fa-copyright"></i>@All Rights Reserved.</p>

@@ -40,7 +40,7 @@ body{
     margin: 50px;
 }
 .content h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: sofia;
     font-size:35px;
 }
 .content h3{
@@ -68,20 +68,18 @@ body{
     color: brown;
     width: fit-content;
 }
-.container .row{
-    margin-top: 50px;
-}
 .container .card{
     border-radius: 20px; 
     transition: transform 0.3s;
     margin:  60px;
     float:left;
 }
-.container .card img{
-    
-    width:70%;
-    border-radius: 20px;
-    margin-top: -7px;
+.container .card img {
+    width: 70%;
+    height: 50vh;
+    margin-top: 7px;
+    border-radius: 30px;
+    padding: 20px;
     margin-left: -3.5%;
     margin-right: -3.5%;
 }
@@ -147,10 +145,6 @@ body{
 
 }
 
-.col{
-    margin:40px auto;
-    
-}
 .profile{
     padding:70px 10px 10px;
     background-color: #efefef;
@@ -158,8 +152,38 @@ body{
 .profile img{
     top:-70px;
     position: absolute;
-    left:calc(50% -100px);
+    left:35%;
     border:10px solid white;
+}
+.join_button{
+    background-color: purple;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.join_mentor{
+    background: linear-gradient(
+    97deg, #f5a623, #F3F781);
+    color: black;
+    filter: drop-shadow(6px 6px 8px black);
+    border-radius: 8px;
+    border-style: none;
+    padding: 8px;
+    margin-top: 10px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .user{
     width:120px;
@@ -376,4 +400,38 @@ footer .contact{
         height: 50px;
         width: 110px;
     }
+}
+
+.social_link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+ .social_link li {
+    font-size: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.social_link .instagram {
+    background-color: #00acee;
+}
+.social_link li a {
+    color: #fff;
+}
+.social_link .linkedin {
+    background-color: #0e76a8;
+}
+.social_link  .whatsapp {
+    background-color: #25d366;
+}
+.social_link  .youtube {
+    background-color: #c4302b;
 }
